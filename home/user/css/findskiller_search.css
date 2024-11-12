@@ -1,0 +1,320 @@
+body {
+
+
+  
+    margin: 0;
+    padding: 0;
+  }
+
+  .header {
+    background-color: #FFA800;
+    height: 40px;
+  }
+
+  .navbar {
+    background-color: #FFFFFF;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+
+  .navbar .profile {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar .profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .navbar .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .navbar .menu li {
+    margin-right: 20px;
+  }
+
+  .navbar .menu li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+
+  .navbar .rest {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar .add-skillers-button {
+    background-color: #0166FF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 9px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .navbar .search-icon {
+    color: black;
+    font-size: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  .skiller-section {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+  }
+  .skiller-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    font-weight: bold;
+    color: rgba(255, 168, 0, 0.1); 
+  }
+
+  .skiller-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgba(1, 102, 255, 1); 
+  }
+
+  .skiller {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 100px;
+    padding: 20px;
+    
+    
+  }
+  
+  .skiller img{
+    width: 310px;
+    height: 350px;
+    border-radius: 10px;
+    margin-left: -5px;
+  }
+
+  .skiller-card {
+    background-color: #C4C4C4;
+    color: red;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    height: 290px;
+    overflow-wrap: break-word;
+    margin-bottom: 190px;
+  }
+
+  .skiller-card h3 {
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+
+  .skiller-card p {
+    font-size: 14px;
+    color: #fc0000;
+    margin-bottom: 20px;
+    
+  }
+
+.image-overlay {
+  position: relative;
+  background: rgba(0, 0, 0, 0.6); 
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.skiller-card:hover .image-overlay {
+  visibility: visible;
+  opacity: 9;
+}
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+.overlay-button {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007BFF;
+  cursor: pointer;
+  text-transform: uppercase; 
+}
+
+.overlay-buttonn {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007BFF;
+  cursor: pointer;
+  text-transform: uppercase; 
+}
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  backdrop-filter: blur(3px);
+  border-radius: 14px;
+  align-items:   center;
+  justify-content: center;
+}
+
+.modal-content {
+background-color: #fefefe;
+margin: 15% auto;
+padding: 20px;
+border: 1px solid #888;
+width: 50%; 
+border-radius: 14px;
+
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical; 
+}
+
+button[type=submit] {
+  background-color:darkblue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type=submit]:hover {
+  background-color: blue;
+}
+
+  
+
+.search-icon {
+  padding: 10px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -400px;
+  top: 13%;
+  width: 300px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: left 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.search-box.active {
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+
+.search-box input[type="text"] {
+  width: 100%;
+  height: 40%;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  background-color: transparent;
+  color: #333;
+}
+
+.search-box input[type="text"]::placeholder {
+  color: #aaa;
+}
+
+.search-box input[type="text"]::-webkit-search-cancel-button {
+  appearance: none;
+}
+
+.search-box button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 100%;
+  background-color: #007bff;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.search-box button:hover {
+  background-color: #0056b3;
+}

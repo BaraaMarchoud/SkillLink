@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: Arial, sans-serif; */
+  
+}
+
+.header {
+  height: 40px;
+  background-color: #FFA800;
+}
+
+.navbar {
+  background-color: #FFFFFF;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .profile {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.navbar .menu{
+  margin-left: 110px;
+}
+
+.navbar .menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar .menu li {
+  margin-right: 20px;
+  
+}
+
+
+.navbar .menu li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.navbar .rest {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.request {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.request p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.request button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #FFA800;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.request button.rejected {
+  background-color: #0166FF;
+}
+
+.request button:hover {
+  background-color: #ff8c00;
+}
+
+.request button.rejected:hover {
+  background-color: #0147ad;
+}
+
+.no-requests {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.no-requests p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  padding: 20px;
+  background-color: #FFF;
+  border-radius: 5px;
+}
+
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+

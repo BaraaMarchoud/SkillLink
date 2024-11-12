@@ -1,0 +1,96 @@
+body {
+  font-family: 'Yellowtail';
+  background: linear-gradient(136deg, lightblue 0%, darkblue 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: white;
+}
+
+.container {
+  max-width: 50%; 
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.2); 
+  box-shadow: 15px 15px 15px 15px rgba(59, 59, 59, 0.2);
+}
+
+.container h2 {
+  font-size: x-large;
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  color: black;
+  transition: box-shadow 0.3s;
+  border-radius: 5px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  box-shadow: 0px 0px 8px 0px #000000;
+}
+
+.form-group input:valid,
+.form-group select:valid {
+  box-shadow: 0px 0px 8px 0px #000000;
+}
+
+.form-group input[type="submit"] {
+  background-color: #000000;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+.form-group input.rad {
+  width: 20px;
+  background-color: #fff;
+}
+
+/* .password-toggle {
+  position: relative;
+} */
+
+.toggle-icon {
+  position: absolute;
+  top: 695px;
+  right: 330px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #cc0000;
+}
+
+.toggle-icon:hover {
+  color: #1a1a1a;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+}
+

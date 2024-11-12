@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .header {
+    background-color: #FFA800;
+    height: 40px;
+  }
+
+
+  
+
+  .navbar {
+    background-color: #FFFFFF;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+  }
+
+  .navbar .profile {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar .profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .navbar .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .navbar .menu li {
+    margin-right: 20px;
+  }
+
+  .navbar .menu li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+
+  .navbar .rest {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar .add-skillers-button {
+    background-color: #0166FF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 9px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .navbar .search-icon {
+    color: black;
+    font-size: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  .event img{
+    width: 100%;
+    height: 650px;
+  }
+
+  .upcoming-events {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+
+  .event-section {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .event-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    font-weight: bold;
+    color: rgba(255, 168, 0, 0.4);
+  }
+  
+  .event-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgba(1, 102, 255, 1);
+  }
+  
+  
+  
+  .event {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .rectangle-active {
+    min-width: 510px;
+    height: 437px;
+    background-color: rgb(0, 25, 59);
+    border-radius: 8px;
+    padding: 20px;
+    margin-right: 20px;
+    color: #fff;
+    overflow-y: scroll;
+   transition: filter 0.3s ease;
+  }
+  
+
+  .background-image {
+    position: relative;
+    width: 100%;
+  }
+
+  .background-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .event-description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .create-event {
+    font-family: 'Bayon';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 1.2;
+    letter-spacing: 4px;
+    margin-bottom: 16px;
+  }
+
+  .event-description p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  .get-started-button {
+    display: block;
+    margin: 16px auto;
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #0166FF;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+
+
+  
+  .search-icon {
+    padding: 10px;
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -400px;
+    top: 13%;
+    width: 300px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease-in-out;
+    overflow: hidden;
+  }
+  
+  .search-box.active {
+    left: 75%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .search-box input[type="text"] {
+    width: 100%;
+    height: 40%;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    background-color: transparent;
+    color: #333;
+  }
+  
+  .search-box input[type="text"]::placeholder {
+    color: #aaa;
+  }
+  
+  .search-box input[type="text"]::-webkit-search-cancel-button {
+    appearance: none;
+  }
+  
+  .search-box button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 100%;
+    background-color: #007bff;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .search-box button:hover {
+    background-color: #0056b3;
+  }
+ 
